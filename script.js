@@ -82,5 +82,63 @@
 // {
 //     console.log("BlockBuster");
 // }
+ 
+//Loops
+// let n = Number(prompt("Enter the number"));
 
+// let i;
+// for ( i=1;i<=n;i++)
+// {
+//     console.log("helllo world");
+// }
+
+// console.log("fail at"+ i)
+
+
+//multiplication table
+// let n= Number(prompt("Enter the number of the table"))
+// let i;
+// for(i=1;i<=10;i++)
+// {
+//     console.log(n+" *"+i+"="+(n*i));
+// }
+
+//Sum upto n terms
+// let n = Number(prompt("Enter the number"));
+
+// let i,sum=0;
+// for(i=1;i<=n;i++)
+// {
+//      sum +=i;
+// }
+// console.log(sum);
+
+//Factorial of a number
+// let n = Number(prompt("Enter the factorial of a number"));
+// let i=1,fact=1;
+//using while loop
+// while(i<=n)
+// {   
+//     fact=fact*i;
+//     i++;
+// }
+// console.log(fact);
+// using for loop
+// for(i=1;i<=n;i++)
+// {
+//     fact = fact*i;
+// }
+// console.log(fact);
+
+//even and odd number sum ranges
+let n = Number(prompt("Enter the number"));
+let oddSum=0,evenSum=0,i=1;
+while(i<=n)
+{
+    if(i%2==0) evenSum=evenSum+i;
+    else oddSum = oddSum+i;
+}
+
+console.log("Even sum is "+evenSum);
+console.log("Odd Sum is : "+oddSum);
 
