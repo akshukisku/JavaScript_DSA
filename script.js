@@ -131,14 +131,52 @@
 // console.log(fact);
 
 //even and odd number sum ranges
+// let n = Number(prompt("Enter the number"));
+// let oddSum=0,evenSum=0,i=1;
+// while(i<=n)
+// {
+//     if(i%2==0) evenSum=evenSum+i;
+//     else oddSum = oddSum+i;
+// }
+
+// console.log("Even sum is "+evenSum);
+// console.log("Odd Sum is : "+oddSum);
+
+// find the factors of the numbers
+
+// let n = Number(prompt("Enter the number of the factors"))
+// let i;
+
+// for(i=1;i<=n;i++)
+// {
+//     if(n%i==0) console.log(i);
+// }
+
+//find the prime numbers
+// let n = Number(prompt("Enter the number"))
+// let isPrime=true;
+
+// for(i=2;i<n;i++)
+// {
+//     if(n%i==0)
+//     {
+//         isPrime=false;
+//         break;
+//     }
+// }
+
+// if(isPrime) console.log("Prime number")
+// else console.log("Odd Number")
+
 let n = Number(prompt("Enter the number"));
-let oddSum=0,evenSum=0,i=1;
-while(i<=n)
+let rev=0 ;
+
+while(n>0)
 {
-    if(i%2==0) evenSum=evenSum+i;
-    else oddSum = oddSum+i;
+    let rem = n%10;
+    rev = (rev *10)+rem;
+    n = Math.floor(n/10);
 }
 
-console.log("Even sum is "+evenSum);
-console.log("Odd Sum is : "+oddSum);
+console.log(rev);
 
